@@ -49,20 +49,20 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'kpslink.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e3d82cdf8f9f4783c42170b515d1c271fb1c4500')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'pdiskpro.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '1ca1fe6ebb0523de51228b0e84195d15746ad6af')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+KzbVzahVdqQ3MmM1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+DAKP65TG-rpmZWU1')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/howtodownloadmoviestamilhd/65')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+GFMvhtCR_BdhOTA1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+aukgA3hGuKZmMWE1')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/c/1813787686/19')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello Nanbha and Nanbis ❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001840433141'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'rionetworksupport')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MarselSupport')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -96,8 +96,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://thalapathy-2-fol3.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://thalapathy-2-fol3.onrender.com/".format(FQDN, PORT)
+URL = "https://marselstreamfilter.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://marselstreamfilter.onrender.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -112,9 +112,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://thalapathy-2-fol3.onrender.com/".format(FQDN)
+    URL = "https://marselstreamfilter.onrender.com/".format(FQDN)
 else:
-    URL = "https://thalapathy-2-fol3.onrender.com/".format(FQDN)
+    URL = "https://marselstreamfilter.onrender.com/".format(FQDN)
 
 
 
