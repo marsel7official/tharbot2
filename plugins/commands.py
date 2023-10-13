@@ -330,7 +330,10 @@ async def start(client, message):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>Hey There,\n\n
+📌 You are not verified today!
+Please verify and get unlimited 
+(VIP) Access For Next 24 Hours.💕\n\n📌 आप ने Verify नहीं किया है!\n Verify करने पर 24 घंटे तक  अनलिमिटेड डाउनलोड कर सकते है.💕\n⁉️How To Verify ⁉️\nhttps://t.me/MarselUpdate/8!</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -396,7 +399,10 @@ async def start(client, message):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>Hey There,\n\n
+📌 You are not verified today!
+Please verify and get unlimited 
+(VIP) Access For Next 24 Hours.💕\n\n📌 आप ने Verify नहीं किया है!\n Verify करने पर 24 घंटे तक  अनलिमिटेड डाउनलोड कर सकते है.💕\n⁉️How To Verify ⁉️\nhttps://t.me/MarselUpdate/8!</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -458,7 +464,10 @@ async def start(client, message):
             InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            text="<b>Hey There,\n\n
+📌 You are not verified today!
+Please verify and get unlimited 
+(VIP) Access For Next 24 Hours.💕\n\n📌 आप ने Verify नहीं किया है!\n Verify करने पर 24 घंटे तक  अनलिमिटेड डाउनलोड कर सकते है.💕\n⁉️How To Verify ⁉️\nhttps://t.me/MarselUpdate/8!</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -908,7 +917,7 @@ async def requests(bot, message):
             channels = REQST_CHANNEL
         for channel in channels:
             chat = await bot.get_chat(channel)
-        #chat = int(chat)'''
+        #chat = int(chat)'''I
         link = await bot.create_chat_invite_link(int(REQST_CHANNEL))
         btn = [[
                 InlineKeyboardButton('Join Channel', url=link.invite_link),
